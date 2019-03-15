@@ -27,7 +27,10 @@ class BlockiesIdenticon extends React.Component {
     blockies.render(this.getOpts(), this.canvas);
   }
   render() {
-    return React.createElement("canvas", {ref: canvas => this.canvas = canvas});
+    return React.createElement("canvas", {
+      ref: canvas => this.canvas = canvas,
+      style: this.props.style
+    });
   }
 }
 
