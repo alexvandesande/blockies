@@ -1,12 +1,14 @@
 // Usage:
+//   create component file (e.g. BlockiesIdenticon.js) using uncommented code below
 //   npm install blockies-identicon
-//   const Blockies = require("blockies/react-component");
+//   in the file you want to use the component (e.g. BlockiesIdenticon.js):
+//   import Blockies from "./path/to/BlockiesIdenticon.js";
 //   <Blockies opts={{seed: "foo", color: "#dfe", bgcolor: "#a71", size: 15, scale: 3, spotcolor: "#000"}}/>
 
-var React = require('react');
-var blockies = require("./blockies");
+import React from 'react';
+import blockies from "blockies-identicon";
 
-class BlockiesIdenticon extends React.Component {
+export default class BlockiesIdenticon extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -30,5 +32,3 @@ class BlockiesIdenticon extends React.Component {
     return React.createElement("canvas", {ref: canvas => this.canvas = canvas});
   }
 }
-
-module.exports = BlockiesIdenticon;
