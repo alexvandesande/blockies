@@ -1,6 +1,8 @@
 // Usage:
+//   create component file (e.g. BlockiesIdenticon.js) using uncommented code below
 //   npm install blockies-identicon
-//   import Blockies from "blockies/react-component";
+//   in the file you want to use the component (e.g. BlockiesIdenticon.js):
+//   import Blockies from "./path/to/BlockiesIdenticon.js";
 //   <Blockies opts={{seed: "foo", color: "#dfe", bgcolor: "#a71", size: 15, scale: 3, spotcolor: "#000"}}/>
 
 import React from 'react';
